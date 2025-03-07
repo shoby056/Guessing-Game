@@ -40,10 +40,10 @@ if 'secret_number' not in st.session_state:
 
 st.markdown("<h1 class='title'>🎮 Guess the Number Game 🎲</h1>", unsafe_allow_html=True)
 st.subheader("Can you guess the secret number? 🔢")
-st.write("Game start ho gaya hai! 1 se 10 tak koi bhi number guess karein aur jeetne ki koshish karein! 🎯")
+st.write("The game has started! Guess any number between 1 and 10 and try to win! 🎯")
 
 # User input
-guess = st.number_input("Apna guess enter karein:", min_value=1, max_value=10, step=1)
+guess = st.number_input("Enter your Guess Number:", min_value=1, max_value=10, step=1)
 
 if st.button("🔍 Check Guess"):
     st.session_state.attempts += 1
